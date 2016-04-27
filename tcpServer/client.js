@@ -9,7 +9,7 @@ socket.connect({
   port: 2000,
   host: '127.0.0.1',
 }, function() {
-  socket.write('Hello from client');
+  //socket.write('Hello from client');
   socket.on('data', function(data) {
     console.log('Data received (by client): ' + data);
     task = JSON.parse(data);
